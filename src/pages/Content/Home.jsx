@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
-    <section className="mt-8 md:mt-12 px-4 md:px-16 py-10">
-      <div className="flex flex-col md:flex-row items-start md:space-x-10">
-        <div className="animate-spin-slow drop-shadow-lg p-0.5 rounded-full">
+    <section className="container mx-auto md:mt-12 px-4 md:px-16 py-5">
+      <div className="flex flex-col items-center md:flex-row md:space-x-10 justify-between">
+        <div className="animate-spin-slow">
           <img
-            src="./hero1.png"
+            src="./hero3.png"
             alt="hero"
-            className="md:w-[450px] rounded-full p-3"
+            className="w-72 md:w-[450px] rounded-full p-3"
           />
         </div>
-        <div className="mt-16">
-          <p className="text-gray">Full Stack Developer</p>
+        <div>
+          <p className="text-gray">Web Developer</p>
           <h1 className="text-4xl md:text-5xl mt-2 text-light font-bold tracking-wide">
             Gopal Pokhrel
           </h1>
@@ -28,15 +30,35 @@ const Home = () => {
               build something amazing together!
             </span>
           </p>
-          <div className="mt-4 space-x-4 ">
-            <button className="px-6 py-2.5 bg-button rounded-full text-light border-2 border-blue shadow-lg hover:-translate-y-1 ease-in-out duration-300">
-              Portfolio
-            </button>
-            <button className="px-6 py-2.5 bg-button rounded-full text-light border-2 shadow-lg hover:-translate-y-1 ease-in-out duration-300">
-              Contact
-            </button>
+          <div className="mt-6 md:mt-12 space-x-4 ">
+            <Link to="/portfolio">
+              <button className="px-6 py-2.5 bg-button rounded-full text-light border-2 border-green shadow-lg hover:-translate-y-1 ease-in-out duration-300">
+                Portfolio
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="px-6 py-2.5 bg-button rounded-full text-light border-2 shadow-lg hover:-translate-y-1 ease-in-out duration-300">
+                Contact
+              </button>
+            </Link>
           </div>
         </div>
+
+        {/* <div id="circle-orbit-container">
+          <div id="inner-orbit">
+            <div className="inner-orbit-cirlces">
+              <img src="./language/react.png" alt="react" />
+            </div>
+          </div>
+
+          <div id="middle-orbit">
+            <div className="middle-orbit-cirlces"></div>
+          </div>
+
+          <div id="outer-orbit">
+            <div className="outer-orbit-cirlces"></div>
+          </div>
+        </div> */}
       </div>
     </section>
   );

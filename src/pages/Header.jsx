@@ -12,25 +12,24 @@ const Header = () => {
   }, [isOpen]);
 
   return (
-    <header className="bg-slate-100 text-light font-">
-      <nav className="px-4 py-2 md:px-16 flex items-center justify-between">
+    <header className="bg-slate-100 text-light">
+      <nav className="container mx-auto px-4 py-2 md:px-16 flex items-center justify-between">
         <div>
-          <img src="./logo.png" alt="logo" className="h-16" />
+          <Link to="/">
+            <img src="./logo.png" alt="logo" className="h-16" />
+          </Link>
         </div>
         <ul className="hidden md:flex items-center space-x-8 lg:space-x-12 tracking-wide">
-          <li className="hover:opacity-50 transition ease-in-out duration-300">
+          <li className="hover:opacity-70 transition ease-in-out duration-300">
             <Link to="/">Home</Link>
           </li>
-          <li className="hover:opacity-50 transition ease-in-out duration-300">
-            <Link to="/frontend">FrontEnd Skills</Link>
+          <li className="hover:opacity-70 transition ease-in-out duration-300">
+            <Link to="/about">About</Link>
           </li>
-          <li className="hover:opacity-50 transition ease-in-out duration-300">
-            <Link to="/backend">BackEnd Skills</Link>
-          </li>
-          <li className="hover:opacity-50 transition ease-in-out duration-300">
+          <li className="hover:opacity-70 transition ease-in-out duration-300">
             <Link to="/portfolio">Projects</Link>
           </li>
-          <li className="hover:opacity-50 transition ease-in-out duration-300">
+          <li className="hover:opacity-70 transition ease-in-out duration-300">
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
@@ -39,7 +38,7 @@ const Header = () => {
         </div>
         {isOpen && (
           <div
-            className={`h-full fixed z-20 top-0 left-0 w-60 bg-green transition-transform duration-300 ${
+            className={`h-full fixed z-20 top-0 right-0 w-60 bg-lightGray transition-transform duration-300 ${
               isAnimated ? "translate-x-0" : "translate-x-full"
             }`}
           >

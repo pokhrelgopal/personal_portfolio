@@ -11,10 +11,12 @@ export default {
       gray: "#666666",
       lightGray: "#999999",
       button: "#333333",
+      heading: "#252525",
+      red: "#f90000",
     },
     extend: {
       animation: {
-        "spin-slow": "spin 20s linear infinite",
+        // "spin-slow": "spin 20s linear infinite",
       },
     },
   },
