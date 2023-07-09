@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="bg-slate-100 text-light font-">
-      <nav className="container mx-auto px-4 py-2 md:px-16 flex items-center justify-between">
+      <nav className="px-4 py-2 md:px-16 flex items-center justify-between">
         <div>
           <img src="./logo.png" alt="logo" className="h-16" />
         </div>
@@ -39,12 +39,12 @@ const Header = () => {
         </div>
         {isOpen && (
           <div
-            className={`h-screen absolute top-0 right-0 w-60 bg-green transition-transform duration-300 ${
+            className={`h-full fixed z-20 top-0 left-0 w-60 bg-green transition-transform duration-300 ${
               isAnimated ? "translate-x-0" : "translate-x-full"
             }`}
           >
             <button
-              className="block md:hidden absolute top-0 right-0 mx-4 my-6"
+              className="block md:hidden absolute top-0 right-0 px-4 py-6"
               onClick={() => setIsOpen(false)}
             >
               <HiXMark className="text-background h-8 w-8" />

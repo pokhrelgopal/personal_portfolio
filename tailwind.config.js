@@ -9,8 +9,14 @@ export default {
       blue: "#007CED",
       darkGray: "#333333",
       gray: "#666666",
+      lightGray: "#999999",
+      button: "#333333",
     },
-    extend: {},
+    extend: {
+      animation: {
+        "spin-slow": "spin 20s linear infinite",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,7 +1,7 @@
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 const GITHUB_URL = "https://www.github.com/pokhrelgopal";
-const TWITTER_URL = "";
-const LINKEDIN_URL = "";
+const TWITTER_URL = "https://twitter.com/sandysince_1999";
+const LINKEDIN_URL = "https://www.linkedin.com/in/gopal-pokhrel-520952237/";
 const Footer = () => {
   return (
     <footer className="border-t border-darkGray ">
