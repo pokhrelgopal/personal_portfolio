@@ -17,20 +17,20 @@ const Header = () => {
         <div>
           <img src="./logo.png" alt="logo" className="h-16" />
         </div>
-        <ul className="hidden md:flex items-center space-x-8 lg:space-x-12 tracking-wide text-lg">
-          <li className="hover:opacity-75">
+        <ul className="hidden md:flex items-center space-x-8 lg:space-x-12 tracking-wide">
+          <li className="hover:opacity-50 transition ease-in-out duration-300">
             <Link to="/">Home</Link>
           </li>
-          <li className="hover:opacity-75">
+          <li className="hover:opacity-50 transition ease-in-out duration-300">
             <Link to="/frontend">FrontEnd Skills</Link>
           </li>
-          <li className="hover:opacity-75">
+          <li className="hover:opacity-50 transition ease-in-out duration-300">
             <Link to="/backend">BackEnd Skills</Link>
           </li>
-          <li className="hover:opacity-75">
+          <li className="hover:opacity-50 transition ease-in-out duration-300">
             <Link to="/portfolio">Projects</Link>
           </li>
-          <li className="hover:opacity-75">
+          <li className="hover:opacity-50 transition ease-in-out duration-300">
             <Link to="/contact">Contact</Link>
           </li>
         </ul>

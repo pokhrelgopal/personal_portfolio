@@ -1,3 +1,5 @@
+@import url(https://fonts.bunny.net/css?family=poppins:300,400,500,600,700,800);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,5 +11,5 @@
 }
 
 body {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
