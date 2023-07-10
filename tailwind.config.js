@@ -14,11 +14,7 @@ export default {
       heading: "#252525",
       red: "#f90000",
     },
-    extend: {
-      animation: {
-        // "spin-slow": "spin 20s linear infinite",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <section className="container mx-auto md:mt-12 px-4 md:px-16 py-5">
-      <div className="flex flex-col items-center md:flex-row md:space-x-10 justify-between">
-        <div className="animate-spin-slow">
+      <div className="flex flex-col items-center lg:flex-row md:space-x-10 justify-between">
+        <div className="animate-up-down">
           <img
             src="./hero3.png"
             alt="hero"
@@ -32,8 +32,8 @@ const Home = () => {
           </p>
           <div className="mt-6 md:mt-12 space-x-4 ">
             <Link to="/portfolio">
-              <button className="px-6 py-2.5 bg-button rounded-full text-light border-2 border-green shadow-lg hover:-translate-y-1 ease-in-out duration-300">
-                Portfolio
+              <button className="px-6 py-2.5 bg-button rounded-full text-green border-2 border-green shadow-lg hover:-translate-y-1 ease-in-out duration-300">
+                Projects
               </button>
             </Link>
             <Link to="/contact">
@@ -43,22 +43,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
-        {/* <div id="circle-orbit-container">
-          <div id="inner-orbit">
-            <div className="inner-orbit-cirlces">
-              <img src="./language/react.png" alt="react" />
-            </div>
-          </div>
-
-          <div id="middle-orbit">
-            <div className="middle-orbit-cirlces"></div>
-          </div>
-
-          <div id="outer-orbit">
-            <div className="outer-orbit-cirlces"></div>
-          </div>
-        </div> */}
       </div>
     </section>
   );

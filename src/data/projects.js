@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "React Todo",
-    tech: ["react", "Django", "sqllite3", "tailwind CSS"],
+    tech: ["react", "django", "sqlite3", "tailwind CSS"],
     image: "./projects/react_todo_api.png",
     description:
       "A simple todo app built with React as frontend and Django as backend where user can add, update delete and mark todos.",
@@ -40,14 +40,6 @@ export const projects = [
       "A simple ecommerce app built with React and Tailwind CSS by using fakestore api where user can view products and add them to cart.",
   },
   {
-    id: 6,
-    name: "LinkUp",
-    tech: ["Django", "postgress", "tailwind CSS"],
-    image: "./projects/linkup.png",
-    description:
-      "A simple social media app built with Django and Tailwind CSS where user can add, update delete and view posts. Users can also comment on posts and remove them. Users can also follow other users and view their posts as well as like them.",
-  },
-  {
     id: 7,
     name: "Gadget Hub",
     tech: ["Django", "postgress", "bootstrap", "khalti API"],
@@ -58,7 +50,7 @@ export const projects = [
   {
     id: 10,
     name: "Hostel Website",
-    tech: ["HTML", "tailwind CSS", "javascript"],
+    tech: ["HTML", "tailwind CSS", "javascript", "email JS"],
     image: "./projects/hostel.png",
     description:
       "A simple hostel website built with HTML, Tailwind CSS and JavaScript where user can view the details of the hostel and contact the owner of the hostel.",
@@ -78,5 +70,37 @@ export const projects = [
     image: "./projects/studybud.png",
     description:
       "My first ever django app built solely for learning purpose by following youtube channel Traversy Media, taught by Dennis Ivy.This was a follow along course where I learnt the basics of django and built this app.",
+  },
+  {
+    id: 11,
+    name: "Falcon Drinks",
+    tech: ["React", "tailwind CSS", "cocktail API"],
+    image: "./projects/falcon_drinks.png",
+    description:
+      "A simple cocktail app built with React and Tailwind CSS by using cocktail api where user can view cocktails and search for them.",
+  },
+  {
+    id: 12,
+    name: "Accordion Component",
+    tech: ["React", "tailwind CSS"],
+    image: "./projects/accordion.png",
+    description:
+      "A simple accordions component built with React and Tailwind CSS where user can view the accordions and toggle them.",
+  },
+  {
+    id: 13,
+    name: "Random User Generator",
+    tech: ["React", "tailwind CSS", "randomuser API"],
+    image: "./projects/random_user.png",
+    description:
+      "A simple random user generator app built with React and Tailwind CSS by using randomuser api where user can generate and view random users with random names, images and other details.",
+  },
+  {
+    id: 6,
+    name: "LinkUp",
+    tech: ["Django", "postgress", "tailwind CSS"],
+    image: "./projects/linkup.png",
+    description:
+      "A simple social media app built with Django and Tailwind CSS where user can add, update delete and view posts. Users can also comment on posts and remove them. Users can also follow other users and view their posts as well as like them.",
   },
 ];
